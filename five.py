@@ -16,14 +16,14 @@ def rms( data ):
         sum_squares += n*n
     return math.sqrt( sum_squares / count )
 
-np.set_printoptions(suppress=True) # don't use scientific notation
+np.set_printoptions(suppress=True) 
 
 CHUNK = 4096
 RATE = 44100
 
 p=pyaudio.PyAudio() # start the PyAudio class
 stream=p.open(format=pyaudio.paInt16,channels=1,rate=RATE,input=True,
-              frames_per_buffer=CHUNK) #uses default input device
+              frames_per_buffer=CHUNK)
 
 def mapp(x, in_min, in_max, out_min, out_max):
     if x < in_min:
@@ -49,7 +49,7 @@ for i in range(10000): #to it a few times just to see
 
     samples = np.fromstring(data)
     
-    #print("peak frequency: %d Hz"%freqPeak)
+   
     volume = np.sum(samples**2)/len(samples)
     decibel = 20 * math.log(volume, 10)
     #print("Volume", decibel)
