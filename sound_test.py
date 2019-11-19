@@ -65,7 +65,7 @@ def print_sound(indata, outdata, frames, time):
             counter += 1
     print(counter/10)
 
-    #print(volume_norm)
+
 
     w = np.fft.fft(data)
     freqs = np.fft.fftfreq(w.size)

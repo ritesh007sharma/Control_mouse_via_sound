@@ -50,7 +50,7 @@ def print_sound(indata, outdata, frames, time):
     
     moves.append(move)
     moves = moves[1:]
-    #print(volume_norm, move)
+ 
     #print("moving to ", pyautogui.position()[0], -(move))
     
     

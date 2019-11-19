@@ -20,7 +20,7 @@ def open2(arg):
     run("four.py")
 
 def callback():
-    #print("click!")
+    
   pass
 
 def resetMouse(event):

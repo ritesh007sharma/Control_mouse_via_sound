@@ -13,7 +13,7 @@ except:
 i=0
 f,ax = plt.subplots(2)
 
-# Prepare the Plotting Environment with random starting values
+
 x = np.arange(10000)
 y = np.random.randn(10000)
 
