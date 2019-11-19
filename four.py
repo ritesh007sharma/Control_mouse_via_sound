@@ -22,7 +22,7 @@ def movee():
     global moves
     move = sum(moves)/5
     pyautogui.moveTo(pyautogui.position()[0], move)
-    #print("moving...")
+ 
 
 def print_sound(indata, outdata, frames, time):
     global moves
